@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Do not wake up the screen when you plug or unplug usb/power/whatever.
+         If set to true, this will result in blocking threads inside PowerManagerService
+         of background containers. This would than bring up the Watchdog to kill the
+         system_server. Further, it would brake our display virtualization.
+     -->
+    <bool name="config_unplugTurnsOnScreen">false</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">1</integer>
+    <!--  Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">false</bool>
+
+    <bool name="config_dreamsSupported">false</bool>
+    <!-- <bool name="config_dreamsSupported">false</bool>
+    <string name="config_dozeComponent" translatable="false"></string>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
+    -->
+
+</resources>
