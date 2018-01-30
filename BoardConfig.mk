@@ -27,18 +27,11 @@
 # inherit from bullhead 
 -include device/lge/bullhead/BoardConfig.mk
 
-## set target device to bullhead instead of trustme_bullhead
-## otherwise jf-common would not include necessary subdirs in its Android.mk 
-TARGET_DEVICE := bullhead
-
 # we build our kernel outside the tree
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE :=  550000000
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 2000
-
-# overwrite wlan device variable to activate wifi-hal stub library
-BOARD_WLAN_DEVICE := none
 
 ENABLE_CPUSETS :=

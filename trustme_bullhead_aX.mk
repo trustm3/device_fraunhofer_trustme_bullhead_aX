@@ -64,11 +64,12 @@ include device/fraunhofer/trustme_generic/trustme_generic_aX.mk
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := trustme_bullhead_aX
-PRODUCT_DEVICE := bullhead
+PRODUCT_DEVICE := trustme_bullhead_aX
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := trust-me AndroidX for bullhead
 PRODUCT_MANUFACTURER := fraunhofer
-PRODUCT_MODEL := bullhead
+PRODUCT_MODEL := trustme_bullhead_aX
+TRUSTME_HARDWARE := bullhead
+
 OUT_DIR := out-aosp
 
 TARGET_USES_NANOHUB_SENSORHAL := false
